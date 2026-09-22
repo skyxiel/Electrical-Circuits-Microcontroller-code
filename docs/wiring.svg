@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" width="720" height="360" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="720" height="360" rx="14" fill="#f6f8fa"/>
+
+  <!-- Joystick module -->
+  <rect x="40" y="60" width="210" height="240" rx="10" fill="#1f2937"/>
+  <circle cx="145" cy="150" r="58" fill="#374151"/>
+  <circle cx="145" cy="150" r="34" fill="#111827" stroke="#6b7280" stroke-width="3"/>
+  <text x="145" y="40" text-anchor="middle" font-size="16" font-weight="600" fill="#111827">Joystick module</text>
+
+  <!-- Arduino header -->
+  <rect x="470" y="60" width="210" height="240" rx="10" fill="#00878f"/>
+  <text x="575" y="40" text-anchor="middle" font-size="16" font-weight="600" fill="#111827">Arduino Uno / Nano</text>
+
+  <g font-size="13" font-weight="600">
+    <!-- joystick pin labels -->
+    <g fill="#f9fafb" text-anchor="end">
+      <text x="230" y="104">GND</text>
+      <text x="230" y="154">+5V</text>
+      <text x="230" y="204">VRx</text>
+      <text x="230" y="254">VRy</text>
+      <text x="230" y="294">SW</text>
+    </g>
+    <!-- arduino pin labels -->
+    <g fill="#ffffff">
+      <text x="490" y="104">GND</text>
+      <text x="490" y="154">5V</text>
+      <text x="490" y="204">A0</text>
+      <text x="490" y="254">A1</text>
+      <text x="490" y="294">D3</text>
+    </g>
+  </g>
+
+  <!-- wires -->
+  <g stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M250 100 H470" stroke="#111827"/>
+    <path d="M250 150 H470" stroke="#dc2626"/>
+    <path d="M250 200 H470" stroke="#2563eb"/>
+    <path d="M250 250 H470" stroke="#16a34a"/>
+    <path d="M250 290 H470" stroke="#d97706"/>
+  </g>
+  <g>
+    <circle cx="250" cy="100" r="6" fill="#e5e7eb"/><circle cx="470" cy="100" r="6" fill="#e5e7eb"/>
+    <circle cx="250" cy="150" r="6" fill="#e5e7eb"/><circle cx="470" cy="150" r="6" fill="#e5e7eb"/>
+    <circle cx="250" cy="200" r="6" fill="#e5e7eb"/><circle cx="470" cy="200" r="6" fill="#e5e7eb"/>
+    <circle cx="250" cy="250" r="6" fill="#e5e7eb"/><circle cx="470" cy="250" r="6" fill="#e5e7eb"/>
+    <circle cx="250" cy="290" r="6" fill="#e5e7eb"/><circle cx="470" cy="290" r="6" fill="#e5e7eb"/>
+  </g>
+
+  <!-- wire captions -->
+  <g font-size="12" fill="#374151" text-anchor="middle">
+    <text x="360" y="92">ground</text>
+    <text x="360" y="142">power</text>
+    <text x="360" y="192">X axis (analog)</text>
+    <text x="360" y="242">Y axis (analog)</text>
+    <text x="360" y="282">button (INPUT_PULLUP)</text>
+  </g>
+  <text x="360" y="340" text-anchor="middle" font-size="12" fill="#6b7280">Serial Monitor at 9600 baud</text>
+</svg>
